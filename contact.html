@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crafted Swag</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="crafted.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            h3, p {
+                text-align: center;
+            }
+        </style>           
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="home.html">Crafted Swag</a></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3>Contact Me Today!</h3>
+                <p>If you have questions or a design request, please contact me here.</p>
+                <form method="post" action="mailto:marissajohnson22@outlook.com">
+                    <label for="myFName">*First Name</label>
+                        <input type="text" name="myFName" id="myFName" required="required">
+                    <label for="myLName">*Last Name</label>
+                        <input type="text" name="myLName" id="myLName" required="required">
+                    <label for="myEmail">*E-mail</label>
+                        <input type="email" name="myEmail" id="myEmail" required="required">
+                    <label for="myPhone">Phone</label>
+                        <input type="tel" name="myPhone" id="myPhone" maxlength="12">
+                    <label for="myProduct">Product</label>
+                        <select name="myProduct" id="myProduct">
+                            <option style="display: none">Select a Product</option>
+                            <option value="TShirt">T-Shirt</option>
+                            <option value="LongSleeve">Long Sleeve Shirt</option>
+                            <option value="Hoodie">Hoodie or Sweatshirt</option>
+                            <option value="Hat">Hat</option>
+                            <option value="Stickers">Stickers</option>
+                            <option value="Magnets">Magnets</option>
+                            <option value="Cup">Cup</option>
+                            <option value="Sign">Signage</option>
+                        </select>
+                    <label for="myComments">*Comments</label>
+                        <textarea name="comments" id="myComments" cols="30" rows="2"></textarea>
+                    <input type="submit" name="submit" id="submit">
+                </form>
+                <p>Please hit send on the email so I receive your submission.</p>
+            </main>
+            <footer>
+                Copyright &copy; 2023 Crafted Swag
+                <br>
+                <a href="mailto:marissajohnson22@outlook.com">Marissa Johnson</a>
+            </footer>
+        </div>
+    </body>
+</html>

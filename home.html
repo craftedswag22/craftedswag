@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crafted Swag</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="crafted.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBCA;
+    color:#C1F4E2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#wrapper {
+    background-image: linear-gradient(to bottom, #C6D6F4, #FFFFFF);
+}
+header {
+    color: #555555;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+}
+header a:link {
+    color: #555555;
+}
+header a:visited {
+    color: #555555;
+}
+header a:hover {
+    color: #FFECCA
+}
+h1 {
+    margin-bottom:0;
+    margin-top: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+nav {
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-size: 120%;
+}
+nav li {
+    border-bottom: 1px solid #C1F4E2;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link {
+    color: #555555;
+} 
+nav a:visited {
+    color: #555555;
+}
+nav a:hover {
+    color: #FFDBCA;
+}
+main {
+    padding: 1px 20px 20px 20px;
+    display: block;
+    background-color: #555555;
+    padding-left: 30px;
+    overflow: auto;
+}
+main ul {
+    color: #FFECCA;
+    list-style-type: square;
+    display: grid;
+    width: 60%;
+    max-width: 30em;
+    grid-gap: 1em;
+    grid-template-columns: 10em 1fr;
+}
+h2 {
+    color:#B3E7D5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3 {
+    color: #ADD7C8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    color: #FFECCA;
+}
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2em;
+    color: #555555;
+}
+footer a:link {
+    color: #555555;
+}
+table {
+    border: 2px solid #555555;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 0.5em;
+    border: 2px solid #555555;
+}
+td {
+    text-align: center;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input, textarea {
+    margin-bottom: 0.5em;
+}
+img {
+    width: 350px;
+    height: 350px;
+    padding: 0.50em;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+figure { 
+    position: relative;
+    opacity: .75;
+    transition: all ease-out 3s;
+    margin: 1em;
+    z-index: 1;
+    background-color: #FFDBCA;
+    color: #555555; 
+    font-size: 1em;
+    text-align: center;
+}
+table {
+    color: #555555;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+th, td {
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input, textarea {
+    margin-bottom: 0.5em;
+}
+iframe {
+    margin-top: 1.5em;
+    width: 100%;
+    height: 50em;
+}
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav li {
+       border-bottom: none; 
+    }
+    form {
+        display: grid;
+        width: 60%;
+        max-width: 30em;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+    #submit {
+        grid-column: 2;
+        width: 9em;
+    }
+}
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #555555;
+    }
+    nav {
+        text-align: left;
+        padding-left: 1em;
+        padding-top: 0;
+    }
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+        #wrapper {
+            display: grid;
+            grid-template: "header header"
+                           "nav main"
+                           "nav footer"
+                           / 180px 1fr;
+        }
+    }
+}
+        </style>      
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="home.html">Crafted Swag</a></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Welcome to Crafted Swag</h2>
+                    <p>Do you have an upcoming event that you would like matching tees for? </p>
+                    <p>How about a home decor item that you want upgraded with something custom?</p>
+                    <p>I am here to help.</p>
+                    <p>Here at Crafted Swag, I can take a blank canvas and make it into something that you can wear or use time and time again.</p>
+                 <h3>What I can make custom for you:</h3>
+                    <ul>
+                        <li>T-Shirts</li>
+                        <li>Hoodies</li>
+                        <li>Hats</li>
+                        <li>Koozies</li>
+                        <li>Signage</li>
+                        <li>Shadow Boxes</li>
+                        <li>Towels</li>
+                        <li>Stickers</li>
+                        <li>Travel Cups</li>
+                        <li>Decals</li>
+                    </ul>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/shirtexample.jpg" alt="Shirt Example">
+                    </figure>
+                    <figure>
+                        <img src="images/cupexample.jpg" alt="Cup Example">
+                    </figure>
+                    <figure>
+                        <img src="images/signexample.jpg" alt="Sign Example">
+                    </figure>
+                </div>
+            </main>
+            <footer>
+                Copyright &copy; 2023 Crafted Swag
+                <br>
+                <a href="mailto:marissajohnson22@outlook.com">Marissa Johnson</a>
+            </footer>
+        </div>
+    </body>
+</html>

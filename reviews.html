@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crafted Swag :: Reviews</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="crafted.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <style>
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+            }
+            * {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDBCA;
+    color:#C1F4E2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#wrapper {
+    background-image: linear-gradient(to bottom, #C6D6F4, #FFFFFF);
+}
+header {
+    color: #555555;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+}
+header a:link {
+    color: #555555;
+}
+header a:visited {
+    color: #555555;
+}
+header a:hover {
+    color: #FFECCA
+}
+h1 {
+    margin-bottom:0;
+    margin-top: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+nav {
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-size: 120%;
+}
+nav li {
+    border-bottom: 1px solid #C1F4E2;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link {
+    color: #555555;
+} 
+nav a:visited {
+    color: #555555;
+}
+nav a:hover {
+    color: #FFDBCA;
+}
+main {
+    padding: 1px 20px 20px 20px;
+    display: block;
+    background-color: #555555;
+    padding-left: 30px;
+    overflow: auto;
+}
+main ul {
+    color: #FFECCA;
+    list-style-type: square;
+    display: grid;
+    width: 60%;
+    max-width: 30em;
+    grid-gap: 1em;
+    grid-template-columns: 10em 1fr;
+}
+h2 {
+    color:#B3E7D5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3 {
+    color: #ADD7C8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    color: #FFECCA;
+}
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2em;
+    color: #555555;
+}
+footer a:link {
+    color: #555555;
+}
+table {
+    border: 2px solid #555555;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 0.5em;
+    border: 2px solid #555555;
+}
+td {
+    text-align: center;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input, textarea {
+    margin-bottom: 0.5em;
+}
+img {
+    width: 350px;
+    height: 350px;
+    padding: 0.50em;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+figure { 
+    position: relative;
+    opacity: .75;
+    transition: all ease-out 3s;
+    margin: 1em;
+    z-index: 1;
+    background-color: #FFDBCA;
+    color: #555555; 
+    font-size: 1em;
+    text-align: center;
+}
+table {
+    color: #555555;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+th, td {
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input, textarea {
+    margin-bottom: 0.5em;
+}
+iframe {
+    margin-top: 1.5em;
+    width: 100%;
+    height: 50em;
+}
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav li {
+       border-bottom: none; 
+    }
+    form {
+        display: grid;
+        width: 60%;
+        max-width: 30em;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+    #submit {
+        grid-column: 2;
+        width: 9em;
+    }
+}
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #555555;
+    }
+    nav {
+        text-align: left;
+        padding-left: 1em;
+        padding-top: 0;
+    }
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+        #wrapper {
+            display: grid;
+            grid-template: "header header"
+                           "nav main"
+                           "nav footer"
+                           / 180px 1fr;
+        }
+    }
+}
+        </style>    
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="home.html">Crafted Swag</a></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3>Sara M.</h3>
+                    <p>What an easy ordering process and I am so happy with the bachelorette shirts Rissa was able to create for my mother/daugheters trip to Disneyland.</p>
+                <h3>Shelsea T.</h3>
+                    <p>The sunglasses for the bridal party of my best friend's wedding came out great.  Cannot wait to order again from Rissa.</p>
+                <h3>Todd C.</h3>
+                    <p>Rissa has been helping with our brewery signage for the last two years.  I was thrilled she was able to get our branded font for our event board and for our beer signs at the taproom.</p>
+                <h3>Alan J.</h3>
+                    <p>Rissa did a wonderful job on my wife and I's matching shifts for our mini moon.  My wife was estatic, even though I was not excited to wear matching shirts, they came out great.</p>
+                <h3>Curt G.</h3>
+                    <p>We asked for a pre-purchased wood sign to be customized for our house, as we are the Guests'.  Rissa did way better than we could ever expect and we have enjoyed the new sign on our front door more than ever.</p>
+                <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__t2Bm01UNUpQMUtaQVk2UTA3SkYwWTgyNVhXOU1BQi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                </main>
+            <footer>
+                Copyright &copy; 2023 Crafted Swag
+                <br>
+                <a href="mailto:marissajohnson22@outlook.com">Marissa Johnson</a>
+            </footer>
+        </div>
+    </body>
+</html>
